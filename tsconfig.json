@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+  "target": "es5",
+  "lib": ["es2019"],
+  "module": "commonjs",
+  "outDir": "./dist",
+  "strict": true,                            
+  "baseUrl": "src",
+  "esModuleInterop": true,
+  "experimentalDecorators": true,
+  "forceConsistentCasingInFileNames": true,
+  "strictPropertyInitialization": false,
+  }
+}
