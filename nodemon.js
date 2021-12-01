@@ -1,0 +1,5 @@
+module.exports = {
+    "watch": ["src"],
+    "ext": "ts",
+    "exec": "tsc && node dist/index.js"
+}
