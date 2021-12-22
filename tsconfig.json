@@ -1,14 +1,19 @@
 {
   "compilerOptions": {
-  "target": "es5",
-  "lib": ["es2019"],
-  "module": "commonjs",
-  "outDir": "./dist",
-  "strict": true,                            
-  "baseUrl": "src",
-  "esModuleInterop": true,
-  "experimentalDecorators": true,
-  "forceConsistentCasingInFileNames": true,
-  "strictPropertyInitialization": false,
-  }
+    "target": "es5",
+    "lib": ["es2019"],
+    "module": "commonjs",
+    "outDir": "./dist",
+    "strict": true,
+    "baseUrl": "src",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "strictPropertyInitialization": false,
+    "declaration": true
+  },
+  "exclude": ["node_modules", "dist"],
+  "include": ["**/*.ts"]
 }
