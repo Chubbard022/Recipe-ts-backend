@@ -1,8 +1,22 @@
 import { buildSchema } from "type-graphql";
-import { HelloWorldQuery } from "./queries/hello_world";
+
+import AccountQuery from "./queries/account";
+import IngredientQuery from "./queries/ingredient";
+import RecipeQuery from "./queries/recipe";
+
+import AccountMutation from "./mutations/account";
+import IngredientMutation from "./mutations/ingredient";
+import RecipeMutation from "./mutations/recipe";
 
 export const graphQlBuildSchema = buildSchema({
-  resolvers: [HelloWorldQuery],
+  resolvers: [
+    AccountQuery,
+    IngredientQuery,
+    RecipeQuery,
+    AccountMutation,
+    IngredientMutation,
+    RecipeMutation,
+  ],
   emitSchemaFile: true,
   validate: false,
 });
